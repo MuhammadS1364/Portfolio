@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background: #ece6e6aa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo_text {
+    font-size: 2em;
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 10px 13px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px 2px #555;
+
+}
+
+header .logo_text:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+header .nav_bar a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 10px;
+    border: 1px solid rgb(229, 220, 220);
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+header .nav_bar a:hover {
+    background: #33DF9D;
+    color: #fff;
+    border: 1px solid rgb(122, 204, 153);
+}
+
+header i {
+    margin: 0 9px;
+}
+
+header .sing_in button {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 7px 12px;
+
+}
+
+header .sing_in button:hover {
+    background: #e3a62d;
+    color: #fff;
+    border: 1px solid #fff;
+
+}
+
+/* header ende here */
+
+
+main {
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+main #front_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+main #front_page .left,
+main #front_page .right {
+    width: 50%;
+    height: 100%;
+}
+
+main #front_page .left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+main #front_page h3 {
+    font-size: 25px;
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+main #front_page span {
+    font-size: 30px;
+    background-color: salmon;
+    font-weight: bolder;
+    color: #fff;
+}
+
+main #front_page .me_skill {
+    display: inline;
+    font-size: 2.5em;
+    background: none;
+    color: rgb(236, 71, 6);
+    text-align: left;
+}
+
+main #front_page p {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: none;
+}
+
+main #front_page button {
+    width: 50%;
+    font-size: 3em;
+    text-align: center;
+    background-color: coral;
+    color: #fff;
+    font-weight: bolder;
+    border: 1px solid salmon;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+main #front_page button:hover {
+   background-color: rgb(235, 177, 28);
+}
+
+main #front_page .right {
+    width: 30%;
+    height: 70%;
+    border-radius: 15px;
+}
+
+main #front_page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+/* from page end here  */
+
+main #About {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #About .left,
+main #About .right {
+    width: 40%;
+    height: 60%;
+}
+
+main #About .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 25px 25px 0;
+}
+
+main #About .right {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+main #About .right .about_head {
+    font-size: 2.5em;
+    text-align: center;
+    color: black;
+}
+
+main #About .right .about_para {
+    font-size: 27px;
+    font-family: serif, serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: bolder;
+}
+
+main #About .right .dat_view {
+    width: 100%;
+    /* border: 1px solid salmon; */
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+}
+
+main #About .right .dat_view .box {
+    width: 70%;
+    height: 20vh;
+    font-size: 27px;
+    text-align: center;
+    border: 1px solid black;
+    color: #fff;
+    border-radius: 13px;
+    box-shadow: 5px 10px 5px 2px rgba(188, 232, 122, 0.789);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    transition: all 2s;
+
+}
+
+main #About .right .dat_view .box:hover {
+    transform: translateY(-20px);
+    color: #000;
+    background: transparent;
+    border: 1px solid white;
+    box-shadow: 5px 5px 2px 2px #fff;
+    transition: all 1s;
+}
+
+main #skills {
+    width: 100%;
+    margin: 50px 0;
+}
+
+main #skills .skill_flex {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+}
+
+main #skills .our_skill {
+    font-size: 3em;
+    text-align: center;
+    margin: 30px 0;
+}
+
+main #skills .skill_flex .skill_box {
+    width: 35%;
+    height: 100%;
+    border: 1px solid salmon;
+    display: flex;
+    border-radius: 13PX;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    overflow: hidden;
+}
+
+main #skills .skill_flex .skill_box .icon {
+    font-size: 6em;
+    text-align: center;
+    color: #833AB4;
+
+}
+
+main #skills .skill_flex .skill_box .skill_name {
+
+    font-size: 3em;
+    color: #ff5733;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+main #skills .skill_flex .skill_box button {
+    font-size: 2em;
+    padding: 15px 20px;
+    background-color: #0096FF;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    font-weight: bolder;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+main #skills .skill_flex .skill_box button:hover {
+    background: #1570e8;
+}
+
+main #skills .skill_flex .skill_box .tell_bit_skill {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 23px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.skill_tex {
+    padding: 0 15px;
+}
+
+main #feedBack {
+    width: 100%;
+    height: 100vh;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main #feedBack form {
+    width: 50%;
+    max-width: 550px;
+    border: 1px solid salmon;
+    padding: 20px;
+    background: #fff;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+}
+
+main #feedBack form .feeb_head {
+    font-size: 4em;
+    text-align: center;
+    color: #0096FF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main #feedBack form .input_box {
+    width: 100%;
+    /* border: 1px solid salmon; */
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+
+main #feedBack form label {
+    display: block;
+    font-size: 30px;
+    color: #0096FF;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+main #feedBack form input {
+    width: 100%;
+    font-size: 22px;
+    padding: 10px;
+    border: 1px solid salmon;
+    border-radius: 7px;
+    background: #f1e9e998;
+    transition: all .5s;
+}
+
+main #feedBack form input:focus {
+    border: 1px solid #0096FF;
+    outline: none;
+    transition: all .5s;
+}
+
+main #feedBack form .input_box textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 22px;
+    padding: 15px;
+    border: 1px solid salmon;
+    border-radius: 7px;
+}
+
+main #feedBack form .input_box textarea:focus {
+    border: 1px solid #0096FF;
+    outline: none;
+    transition: all .5s;
+}
+
+main #feedBack .feed_submit_btn button {
+    width: 100%;
+    font-size: 2em;
+    padding: 15px;
+    font-weight: bolder;
+    background: #0096FF;
+    color: #fff;
+    border: 1px solid salmon;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+main #feedBack .feed_submit_btn button:hover {
+    background: #1570e8;
+    transition: all .5s;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo_text {
+    font-size: 2.76em;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+
+}
+
+footer .logo_text:hover {
+    color: #000;
+    background: white;
+}
+
+@media (max-width:450px) {
+    header {
+        width: 100%;
+        height: 10vh;
+        background: #58C199;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .logo_text {
+        font-size: 22px;
+        color: #fff;
+    }
+
+    header .nav_bar {
+        display: none;
+
+    }
+
+    header .sing_in button {
+        font-size: 1em;
+        font-weight: 900;
+        text-align: center;
+        background: #33C1DE;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        cursor: pointer;
+        padding: 7px;
+        transition: all 1s;
+
+    }
+
+    header .sing_in button:hover {
+        background: #CBC5EA;
+        color: #183642;
+        transition: all 1s;
+    }
+
+    /* header ende here */
+
+    main {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    main section {
+        margin: 20px 0;
+    }
+
+    main #front_page {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        align-items: center;
+    }
+
+    main #front_page .left {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    main #front_page h3 {
+        font-size: 23px;
+        color: #000;
+        margin-bottom: 5px;
+    }
+
+    main #front_page span {
+        font-size: 25px;
+        background-color: salmon;
+        font-weight: bolder;
+    }
+
+    main #front_page .me_skill {
+        display: inline;
+        font-size: 2em;
+        background: none;
+        color: rgb(236, 71, 6);
+        text-align: left;
+    }
+
+    main #front_page p {
+        font-size: 20px;
+        background-color: none;
+    }
+
+    main #front_page button {
+        width: 80%;
+        font-size: 2.5em;
+        text-align: center;
+            background-color: coral;
+        color: #fff;
+        font-weight: bolder;
+        border: 1px solid salmon;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    main #front_page button:hover {
+        background-color: rgb(235, 177, 28);
+    }
+
+    main #front_page .right {
+        width: 100%;
+        height: 50%;
+        border-radius: 15px;
+        background: #833AB4;
+    }
+
+    main #front_page img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+
+    }
+
+    /* from page end here  */
+
+    main #About {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    background-image: none;
+    }
+
+    main #About .left {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    main #About .left img {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 25px 25px 0;
+    }
+
+    main #About .right {
+        width: 100%;
+        height: 100vh;
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px 0 0 15px;
+    }
+
+    main #About .right .about_head {
+        font-size: 2.5em;
+        text-align: center;
+        color: #1570e8;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    main #About .right .about_para {
+        font-size: 18px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 0;
+        color: black;
+    }
+
+    main #About .right .dat_view {
+        width: 100%;
+        height: 500px;
+        /* border: 1px solid salmon; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        /* gap: 15px; */
+        align-items: center;
+        padding: 10px;
+    }
+
+    main #About .right .dat_view .box {
+    width: 100%;
+    height: 30%;
+    font-size: 22px;
+    text-align: center;
+    border: 1px solid rgb(164, 159, 159);
+    color: black;
+    border-radius: 13px;
+    box-shadow: 5px 10px 5px 2px #b3a9a9;
+    line-height: 20px;
+    transition: all 2s;
+
+
+    }
+
+    main #About .right .dat_view .box:hover {
+        transform: translateY(-10px);
+        background: salmon;
+        color: #fff;
+        box-shadow: 5px 10px 5px 2px #fff;
+        border: 1px solid white;
+        transition: all 1s;
+    }
+
+    /* About section over here */
+
+
+    main #skills {
+        width: 100%;
+        margin: 50px 0;
+        background: #33DF9D;
+    }
+
+    main #skills .skill_flex {
+        width: 100%;
+        /* height: 40%; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 40px;
+        align-items: center;
+    }
+
+    main #skills .our_skill {
+        font-size: 3em;
+        text-align: center;
+        margin: 30px 0;
+        color: white;
+    }
+
+    main #skills .skill_flex .skill_box {
+        width: 90%;
+        height: 50%;
+        border: 1px solid salmon;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+        overflow: hidden;
+        background: #fff;
+        transition: all 2s;
+
+    }
+    main #skills .skill_flex .skill_box:hover{
+        box-shadow: 8px 10px 2px 2px #f1efef;
+        transform: translateY(-10px);
+        border-color: #000;
+        transition: all 2s;
+    }
+    main #skills .skill_flex .skill_box .icon {
+        font-size: 6em;
+        text-align: center;
+        color: #833AB4;
+
+    }
+
+    main #skills .skill_flex .skill_box .skill_name {
+        font-size: 3em;
+    }
+
+    main #skills .skill_flex .skill_box button {
+        font-size: 2em;
+        padding: 15px 20px;
+        background-color: #0096FF;
+        color: #fff;
+        border: 1px solid #fff;
+        text-align: center;
+        font-weight: bolder;
+        margin: 15px 0;
+        cursor: pointer;
+    }
+main #skills .skill_flex .skill_box .tell_bit_skill {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
+    .skill_tex {
+        padding: 0 15px;
+    }
+
+    /* skill section over */
+
+
+    main #feedBack {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #feedBack form {
+        width: 90%;
+        border: 1px solid salmon;
+        padding: 10px;
+        background: #fff;
+        backdrop-filter: blur(20px);
+    }
+
+    main #feedBack form .feeb_head {
+        font-size: 3em;
+        text-align: center;
+        color: #0096FF;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    main #feedBack form .input_box {
+        width: 100%;
+        /* border: 1px solid salmon; */
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+
+    main #feedBack form label {
+        display: block;
+        font-size: 25px;
+        color: #0096FF;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+
+    main #feedBack form input {
+        width: 100%;
+        font-size: 20px;
+        padding: 8px;
+        border: 1px solid salmon;
+        border-radius: 7px;
+        background: #f1e9e998;
+    }
+
+    main #feedBack form input:focus {
+        border: 1px solid #0096FF;
+        outline: none;
+    }
+
+    main #feedBack form .input_box textarea {
+        width: 100%;
+        height: 150px;
+        font-size: 20px;
+        padding: 10px;
+        border: 1px solid salmon;
+        border-radius: 7px;
+    }
+
+    main #feedBack form .input_box textarea:focus {
+        border: 1px solid #0096FF;
+        outline: none;
+    }
+
+    main #feedBack .feed_submit_btn button {
+        width: 100%;
+        font-size: 1.5em;
+        padding: 10px;
+        font-weight: bolder;
+        background: #0096FF;
+        color: #fff;
+        border: 1px solid salmon;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    main #feedBack .feed_submit_btn button:hover {
+        background: #1570e8;
+        transition: all .5s;
+    }
+
+    footer {
+        width: 100%;
+        height: 10vh;
+        background: #393838bd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .logo_text {
+        font-size: 2em;
+        color: #fff;
+        padding: 10px;
+        border-radius: 12px;
+        transition: all 1s;
+
+    }
+
+    footer .logo_text:hover {
+        color: #000;
+        background: white;
+        transition: all .5s;
+    }
+
+
+
+}

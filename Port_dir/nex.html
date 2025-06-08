@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ani-border {
+  border: 10px solid;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-image: linear-gradient(120deg, red, yellow, green, blue) 1;
+  animation: animateBorder 4s linear infinite;
+  width: fit-content;
+  margin: 50px auto;
+  border-radius: 12px;
+}
+
+@keyframes animateBorder {
+  0% {
+    border-image-source: linear-gradient(90deg, red, yellow, green, blue);
+  }
+  25% {
+    border-image-source: linear-gradient(90deg, yellow, green, blue, red);
+  }
+  50% {
+    border-image-source: linear-gradient(90deg, green, blue, red, yellow);
+  }
+  75% {
+    border-image-source: linear-gradient(90deg, blue, red, yellow, green);
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, red, yellow, green, blue);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="ani-border">
+        animantion border 
+    </div>
+</body>
+</html>
